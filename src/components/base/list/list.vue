@@ -19,8 +19,17 @@
     .list-item
       box-sizing border-box
       margin-top .493333rem
+      text-align center
+      position relative
       img
         width 100%
+        &[lazy=loading]
+          width .6rem
+          height .6rem
+          position absolute
+          left 50%
+          top 50%
+          transform translate3d(-50%,-50%,0)
       h2
         font-size 12px
       h1
@@ -31,7 +40,7 @@
 </style>
 <template>
   <div>
-    <h1 class="title">
+    <h1 v-if="showTitle" class="title">
       <div class="tip"></div>
       <div><slot name="title">推荐</slot></div>
     </h1>
@@ -49,6 +58,10 @@ export default {
     num: {
       type: Number,
       default: 2
+    },
+    showTitle: {
+      type: Boolean,
+      default: true
     }
   },
   mounted () {

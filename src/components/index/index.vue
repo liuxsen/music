@@ -38,7 +38,6 @@
       line-height 1.333333rem
       text-align center
       border1px($theme-color)
-      
       &:after
         border-radius 50%
     .iconfont
@@ -73,7 +72,7 @@
             </div>
             <p>每日推荐</p>
           </li>
-          <li>
+          <li @click="$router.push({name: 'recommend'})">
             <div class="icon-list">
               <i class="iconfont icon-gedan"></i>
             </div>
@@ -90,7 +89,7 @@
         <list :num="2" v-if="mvList">
           <div slot="title">推荐MV</div>
           <div class="list-item" v-for="(item,i) in mvList" :key="i">
-            <img :src="item.picUrl" />
+            <img v-lazy="item.picUrl" />
             <h1>{{item.name}}</h1>
             <p>{{item.copywriter}}</p>
           </div>
@@ -98,7 +97,7 @@
         <list :num="3" v-if="recommendList.length>0">
           <div slot="title">推荐歌单</div> 
           <div @click="goRecommend(item)" class="list-item" v-for="(item,i) in recommendList" :key="i">
-            <img :src="item.picUrl" />
+            <img v-lazy="item.picUrl" />
             <h1>{{item.name}}</h1>
             <p>{{item.creator.nickname}}</p>
           </div>
@@ -106,7 +105,7 @@
         <list :num="3" v-if="newSongList.length>0">
           <div slot="title">最新音乐</div>
           <div @click="goNewMusic(item)" class="list-item" v-for="(item,i) in newSongList" :key="i">
-            <img :src="item.picUrl" />
+            <img v-lazy="item.picUrl" />
             <h1>{{item.name}}</h1>
             <!-- <p>{{item.creator.nickname}}</p> -->
           </div>
