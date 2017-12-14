@@ -1,6 +1,13 @@
 # music
 
-> A Vue.js project
+> 网易云音乐播放器
+![](/assets/1.png)
+![](/assets/2.png)
+![](/assets/3.png)
+![](/assets/4.png)
+![](/assets/5.png)
+![](/assets/6.png)
+![](/assets/7.png)
 
 ## Build Setup
 
@@ -19,3 +26,4 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
