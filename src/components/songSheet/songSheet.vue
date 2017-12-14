@@ -156,7 +156,7 @@
           <div class="tab">
             <div>
               <p><i class="iconfont icon-shoucang2"></i></p>
-              <p class="font">73333</p>
+              <p class="font">{{songListInfo.trackCount}}</p>
             </div>
             <div>
               <p><i class="iconfont icon-xinxi"></i></p>

@@ -198,7 +198,9 @@ export default {
                 from: item.song.album.name,
                 singerName: item.song.artists[0].name,
                 singerId: item.song.artists[0].id,
-                name: item.name
+                name: item.name,
+                playcount: item.playcount,
+                trackCount: item.trackCount
               })
               return song
             })

@@ -5,6 +5,7 @@ import index from '@/components/index/index'
 import songSheet from '@/components/songSheet/songSheet'
 import play from '@/components/play/play'
 import recommend from '@/components/recommend/recommend'
+import mv from '@/components/mv/mv'
 
 Vue.use(Router)
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/recommend',
       name: 'recommend',
       component: recommend
+    },
+    {
+      path: '/mv',
+      name: 'mv',
+      component: mv
     }
   ]
 })

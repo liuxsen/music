@@ -11,3 +11,7 @@ export const CHANGE_CUREENT_SONG_TIME = 'CHANGE_CUREENT_SONG_TIME'
 export const CHANGE_CUREENT_SONG_USE_INDEX = 'CHANGE_CUREENT_SONG_USE_INDEX'
 // 切换歌曲
 export const switchSong = 'switchSong'
+// 更新 mvlist
+export const updateMvList = 'updateMvList'
+export const changeMvPlayState = 'changeMvPlayState'
+export const changeMvPlayIndex = 'changeMvPlayIndex'

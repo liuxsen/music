@@ -9,5 +9,7 @@ export default class SongListInfo {
       avatarUrl: info.avatarUrl,
       nickname: info.nickname
     }
+    this.playcount = info.playcount
+    this.trackCount = info.trackCount
   }
 }
